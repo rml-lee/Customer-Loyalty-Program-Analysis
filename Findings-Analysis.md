@@ -8,7 +8,7 @@
 
 Tableau - [Link](https://public.tableau.com/views/Workbook2_CustomerFlightsProject/Map?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-![Map](https://github.com/user-attachments/assets/115efc3e-3fb9-4696-a1ba-d6d672342e0c)
+![Map](https://github.com/user-attachments/assets/71129b90-a508-492a-964c-3a56dec1e3df)
 
 - On average, the highest lifetime value customers are coming from the Eastern Canadian provinces of **Quebec, Newfoundland and Labrador, and New Brunswick**.
   
@@ -20,7 +20,7 @@ Tableau - [Link](https://public.tableau.com/views/Workbook2_CustomerFlightsProje
 
 Tableau - [Link](https://public.tableau.com/views/Workbook2_CustomerFlightsProject/GroupedBarChart2?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
 
-![Grouped Bar Chart #2](https://github.com/rml-lee/MYSQL-Tableau-Customer-Flights-Project/assets/160198611/aae5f1e2-57e3-4110-967e-edb059aa61dd)
+![Grouped Bar Chart #2](https://github.com/user-attachments/assets/23614883-8103-4327-bdc6-c886dada2ba1)
 
 - The 2018 promotion campaign occurred from February to the end of April. Without the promotion program, we would normally receive around 200 enrollments. 
 
@@ -35,7 +35,7 @@ Tableau - [Link](https://public.tableau.com/views/Workbook2_CustomerFlightsProje
 
 Tableau - [Link](https://public.tableau.com/views/Workbook2_CustomerFlightsProject/DualCombination?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
 
-![Dual Combination](https://github.com/rml-lee/MYSQL-Tableau-Customer-Flights-Project/assets/160198611/02ff4248-7db4-453a-90a1-80d579626c3f)
+![Dual Combination](https://github.com/user-attachments/assets/8fac180d-9c9b-45b9-a00f-21b408c53461)
 
 - The churn rate overall has been relatively low, hovering around 1% throughout the year of 2018. This indicates that there’s a high level of customer retention.
   
