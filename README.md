@@ -71,7 +71,7 @@ You can access the Jupyter Notebook file [here](https://github.com/rml-lee/Custo
 
 After cleaning the data, this is our schema that will be used throughout this project.
 
-![customer_flight_activity](https://github.com/rml-lee/MYSQL-Tableau-Customer-Flights-Project/assets/160198611/8c12f0af-f320-4cba-a141-7c1335e2fc6e)
+![customer_flight_activity](https://github.com/rml-lee/Customer-Loyalty-Program-Analysis/blob/main/customer_flight_activity_schema.png)
 
 
 # Data Transformation
