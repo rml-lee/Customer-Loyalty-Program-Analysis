@@ -83,7 +83,7 @@ Tools used:
 
 The provided SQL script contains a set of questions with queries used to gather insight about this dataset using MySQL. 
 
-You can access the SQL file [here](https://github.com/rml-lee/MYSQL-Tableau-Customer-Flights-Project/blob/main/Customer%20Flights%20Project.sql).
+You can access the SQL file [here](https://github.com/rml-lee/Customer-Loyalty-Program-Analysis/blob/main/Customer%20Flights%20Project.sql).
 
 
 # Findings & Analysis
