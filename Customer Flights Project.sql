@@ -63,17 +63,18 @@ ORDER BY 1 ASC;
 
 
 
--- 5. List the customers who enrolled into a loyalty program and dropped within 1 month of enrollment during 2015.
+-- 5. How many customers per year enroll in a loyalty program and drop out within 30 days (1 month)?
 SELECT
-    loyalty_number,
-    enrollment_date,
-    cancellation_date
+    YEAR(enrollment_date) AS year,
+    COUNT(*) AS total_customers
 FROM
     customer_loyalty_history
 WHERE
-      YEAR(enrollment_date) = 2015
-  AND (TIMESTAMPDIFF(MONTH, enrollment_date, cancellation_date) BETWEEN 0 AND 1
-  AND cancellation_date IS NOT NULL);
+      cancellation_date IS NOT NULL
+  AND cancellation_date >= enrollment_date
+  AND DATEDIFF(cancellation_date, enrollment_date) <= 30
+GROUP BY 1
+ORDER BY 1 ASC;
 
 
 
