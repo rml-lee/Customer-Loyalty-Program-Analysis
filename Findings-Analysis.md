@@ -35,7 +35,7 @@ Tableau - [Link](https://public.tableau.com/views/Workbook2_CustomerFlightsProje
 
 Tableau - [Link](https://public.tableau.com/views/Workbook2_CustomerFlightsProject/DualCombination?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
 
-![Dual Combination](https://github.com/user-attachments/assets/8fac180d-9c9b-45b9-a00f-21b408c53461)
+![Dual Combination](https://github.com/user-attachments/assets/67b1361b-acab-4303-a07b-2610fd9c75ca)
 
 - The churn rate overall has been relatively low, hovering around 1% throughout the year of 2018. This indicates that there’s a high level of customer retention.
   
