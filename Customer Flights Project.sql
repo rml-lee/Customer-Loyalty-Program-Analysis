@@ -191,6 +191,7 @@ WITH quarterly_data AS
         customer_loyalty_history
     WHERE
         enrollment_date <= '2018-01-01'
+    AND (cancellation_date > '2018-01-01' OR cancellation_date IS NULL)
     UNION ALL
     SELECT
         2018 AS 'year',
@@ -201,6 +202,7 @@ WITH quarterly_data AS
         customer_loyalty_history
     WHERE
         enrollment_date <= '2018-04-01'
+    AND (cancellation_date > '2018-04-01' OR cancellation_date IS NULL)
     UNION ALL
     SELECT
         2018 AS 'year',
@@ -211,6 +213,7 @@ WITH quarterly_data AS
         customer_loyalty_history
     WHERE
         enrollment_date <= '2018-07-01'
+    AND (cancellation_date > '2018-07-01' OR cancellation_date IS NULL)
     UNION ALL
     SELECT
         2018 AS 'year',
@@ -220,13 +223,14 @@ WITH quarterly_data AS
     FROM
         customer_loyalty_history
     WHERE
-        enrollment_date <= '2018-10-01')
+        enrollment_date <= '2018-10-01'
+    AND (cancellation_date > '2018-10-01' OR cancellation_date IS NULL))
 -- Final SELECT statement to calculate the churn rate
 SELECT
     year,
     quarter,
     enrolled_at_start_of_quarter,
     canceled_in_quarter,
-    (canceled_in_quarter / enrolled_at_start_of_quarter) * 100 AS churn_rate
+    ROUND((canceled_in_quarter / enrolled_at_start_of_quarter) * 100, 2) AS churn_rate
 FROM
     quarterly_data;
