@@ -91,8 +91,7 @@ FROM
     JOIN customer_flight_activity a
     ON h.loyalty_number = a.loyalty_number
 GROUP BY 1
-HAVING
-    AVG(a.flights_booked) > (SELECT avg_booked FROM nat_avg)
+HAVING AVG(a.flights_booked) > (SELECT avg_booked FROM nat_avg)
 ORDER BY 1 ASC;
 
 
