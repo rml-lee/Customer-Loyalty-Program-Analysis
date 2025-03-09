@@ -37,7 +37,7 @@ Tableau - [Link](https://public.tableau.com/views/Workbook2_CustomerFlightsProje
 
 ![Dual Combination](https://github.com/user-attachments/assets/67b1361b-acab-4303-a07b-2610fd9c75ca)
 
-- The churn rate overall has been relatively low, hovering around 1% throughout the year of 2018. This indicates that there’s a high level of customer retention.
+- The churn rate overall has been relatively low, hovering a little under 1% throughout the year of 2018. This is great as it indicates that there’s a high level of customer retention.
   
 - The small decline in churn rate during the second quarter is likely due to the amount of new customers obtained during the 2018 promotion.
   
