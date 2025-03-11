@@ -37,7 +37,7 @@ Tableau - [Link](https://public.tableau.com/views/Workbook2_CustomerFlightsProje
 
 ![Dual Combination](https://github.com/user-attachments/assets/67b1361b-acab-4303-a07b-2610fd9c75ca)
 
-Note: Based on the dataset, on average, we have approximately 13,483 customers currently enrolled at the start of each quarter. This chart displays the number of cancellations and the churn rate per quarter.
+Note: Based on the dataset, on average, we have approximately 13,483 customers enrolled in the loyalty program at the start of each quarter. This chart displays the number of cancellations and the churn rate per quarter.
 
 - The churn rate overall has been relatively low, hovering a little under 1% throughout the year of 2018. This is great as it indicates that there’s a high level of customer retention.
   
