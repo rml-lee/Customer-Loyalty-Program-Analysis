@@ -184,7 +184,7 @@ WHERE
 -- 11. What was the quarterly Churn Rate during 2018?
 
 WITH quarterly_data AS
--- Finds the number of customers who enrolled and canceled during each quarter
+    -- Finds the number of customers who enrolled and canceled during each quarter
     (SELECT
         2018 AS 'year',
         'Q1' AS 'quarter',
