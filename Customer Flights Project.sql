@@ -84,6 +84,7 @@ WITH nat_avg AS
               ROUND(AVG(flights_booked), 0) AS avg_booked
           FROM
               customer_flight_activity)
+
 SELECT
     h.city
 FROM
@@ -141,6 +142,7 @@ WITH promo AS
           WHERE
                 enrollment_type = '2018 Promotion'
             AND loyalty_card = 'Aurora')
+
 SELECT
     MONTH(p.enrollment_date) AS month,
     (COUNT(a.loyalty_number) / COUNT(p.loyalty_number)) * 100 AS aurora_percentage
@@ -167,6 +169,7 @@ WITH cte AS
                 YEAR(enrollment_date) = 2018
             AND MONTH(enrollment_date) IN (2, 3)
           GROUP BY 1, 2)
+
 SELECT
     city,
     amt_diff
@@ -180,8 +183,8 @@ WHERE
 
 -- 11. What was the quarterly Churn Rate during 2018?
 
--- Common Table Expression (CTE) for calculating churn rate by quarter
 WITH quarterly_data AS
+-- Finds the number of customers who enrolled and canceled during each quarter
     (SELECT
         2018 AS 'year',
         'Q1' AS 'quarter',
