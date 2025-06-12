@@ -228,6 +228,7 @@ WITH quarterly_data AS
     WHERE
         enrollment_date <= '2018-10-01'
     AND (cancellation_date > '2018-10-01' OR cancellation_date IS NULL))
+
 -- Final SELECT statement to calculate the churn rate
 SELECT
     year,
