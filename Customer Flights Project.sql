@@ -127,6 +127,7 @@ GROUP BY 1;
 
 -- 9. What was the percentage of monthly aurora card enrollments during the 2018 promotion?
 WITH promo AS
+        -- Returns 2018 promotion enrollments
          (SELECT
               *
           FROM
@@ -135,6 +136,7 @@ WITH promo AS
               enrollment_type = '2018 Promotion'),
 
      aurora_promo AS
+         -- Returns 2018 promotion aurora card enrollments
          (SELECT
               *
           FROM
@@ -143,6 +145,7 @@ WITH promo AS
                 enrollment_type = '2018 Promotion'
             AND loyalty_card = 'Aurora')
 
+-- Returns the percentage of monthly aurora card enrollments
 SELECT
     MONTH(p.enrollment_date) AS month,
     (COUNT(a.loyalty_number) / COUNT(p.loyalty_number)) * 100 AS aurora_percentage
