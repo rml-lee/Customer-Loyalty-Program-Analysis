@@ -79,11 +79,12 @@ ORDER BY 1 ASC;
 
 
 -- 6. Which city's average booking amount exceeded the national average?
-WITH nat_avg AS
-         (SELECT
-              ROUND(AVG(flights_booked), 0) AS avg_booked
-          FROM
-              customer_flight_activity)
+WITH nat_avg AS (
+    SELECT
+        ROUND(AVG(flights_booked), 0) AS avg_booked
+    FROM
+        customer_flight_activity
+)
 
 SELECT
     h.city
@@ -126,24 +127,26 @@ GROUP BY 1;
 
 
 -- 9. What was the percentage of monthly aurora card enrollments during the 2018 promotion?
-WITH promo AS
-        -- Returns 2018 promotion enrollments
-         (SELECT
-              *
-          FROM
-              customer_loyalty_history
-          WHERE
-              enrollment_type = '2018 Promotion'),
+WITH promo AS (
+    -- Returns 2018 promotion enrollments
+    SELECT
+        *
+    FROM
+        customer_loyalty_history
+    WHERE
+        enrollment_type = '2018 Promotion'
+),
 
-     aurora_promo AS
-         -- Returns 2018 promotion aurora card enrollments
-         (SELECT
-              *
-          FROM
-              customer_loyalty_history
-          WHERE
-                enrollment_type = '2018 Promotion'
-            AND loyalty_card = 'Aurora')
+aurora_promo AS (
+    -- Returns 2018 promotion aurora card enrollments
+    SELECT
+        *
+    FROM
+        customer_loyalty_history
+    WHERE
+        enrollment_type = '2018 Promotion'
+    AND loyalty_card = 'Aurora'
+)
 
 -- Returns the percentage of monthly aurora card enrollments
 SELECT
@@ -159,19 +162,20 @@ ORDER BY 1 ASC;
 
 
 -- 10. Which cities had the largest growth and drop in volume of enrollments between Feb. and Mar. of the 2018 promotion?
-WITH cte AS
-         (SELECT
-              MONTH(enrollment_date) AS month,
-              city,
-              COUNT(enrollment_date) AS total,
-              COUNT(enrollment_date) -
-              LAG(COUNT(enrollment_date)) OVER (PARTITION BY city ORDER BY MONTH(enrollment_date) ASC) AS amt_diff
-          FROM
-              customer_loyalty_history
-          WHERE
-                YEAR(enrollment_date) = 2018
-            AND MONTH(enrollment_date) IN (2, 3)
-          GROUP BY 1, 2)
+WITH cte AS (
+    SELECT
+        MONTH(enrollment_date) AS month,
+        city,
+        COUNT(enrollment_date) AS total,
+        COUNT(enrollment_date) -
+        LAG(COUNT(enrollment_date)) OVER (PARTITION BY city ORDER BY MONTH(enrollment_date) ASC) AS amt_diff
+    FROM
+        customer_loyalty_history
+    WHERE
+        YEAR(enrollment_date) = 2018
+    AND MONTH(enrollment_date) IN (2, 3)
+    GROUP BY 1, 2
+)
 
 SELECT
     city,
@@ -186,9 +190,9 @@ WHERE
 
 -- 11. What was the quarterly Churn Rate during 2018?
 
-WITH quarterly_data AS
+WITH quarterly_data AS (
     -- Finds the number of customers who enrolled and canceled during each quarter
-    (SELECT
+    SELECT
         2018 AS 'year',
         'Q1' AS 'quarter',
         COUNT(*) AS enrolled_at_start_of_quarter,
@@ -230,7 +234,8 @@ WITH quarterly_data AS
         customer_loyalty_history
     WHERE
         enrollment_date <= '2018-10-01'
-    AND (cancellation_date > '2018-10-01' OR cancellation_date IS NULL))
+    AND (cancellation_date > '2018-10-01' OR cancellation_date IS NULL)
+)
 
 -- Final SELECT statement to calculate the churn rate
 SELECT
