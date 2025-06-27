@@ -1,9 +1,9 @@
 # Airline Loyalty Campaign Program Analysis
 
 
-# --------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------------------------
 
-## There are no formal days in this dataset. All analysis will be related to Years & Months!! ##
+-- Note: There are no formal days in this dataset. All analysis will be related to Years & Months!!
 
 # ---------------------------------------------------------------------------------------------------------------
 
