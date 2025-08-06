@@ -7,12 +7,12 @@ Extract insights and trends about historical customer booking and flight activit
 **Domain**: Marketing and Customer Analytics
 
 ## Table of Contents
-- [Data Source](#data-source)
-- [Data Dictionary](#data-dictionary)
-- [Data Cleaning & Exploration](#data-cleaning--Exploration)
-- [Data Schema](#data-schema)
-- [Data Transformation](#data-transformation)
-- [Findings & Analysis](#findings--analysis)
+- [**Data Source**](#data-source)
+- [**Data Dictionary**](#data-dictionary)
+- [**Data Cleaning & Exploration**](#data-cleaning--Exploration)
+- [**Data Schema**](#data-schema)
+- [**Data Transformation**](#data-transformation)
+- [**Findings & Analysis**](#findings--analysis)
 
 # Data Source
 Airline Loyalty Campaign Program Impact on Flights - [Kaggle](https://www.kaggle.com/datasets/agungpambudi/airline-loyalty-campaign-program-impact-on-flights?select=Customer+Flight+Activity.csv)
