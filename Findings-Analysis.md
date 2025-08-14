@@ -20,6 +20,8 @@ Tableau - [Link](https://public.tableau.com/views/Workbook2_CustomerFlightsProje
 
   - Consider retailoring marketing strategies towards lower valued customers. Create targeted promotions, region-specific offers, or localized advertising to help extend lifetime value. 
 
+---
+
 ## 4. What impact did the 2018 promotion have on the amount of enrollment compared to previous years?
 
 Tableau - [Link](https://public.tableau.com/views/Workbook2_CustomerFlightsProject/GroupedBarChart2?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link)
@@ -38,6 +40,7 @@ Tableau - [Link](https://public.tableau.com/views/Workbook2_CustomerFlightsProje
 
   - Continue to implement the promotion program annually and explore new creative ways to advertise and market it to attract new customers.
 
+---
 
 ## 11. What was the quarterly Churn Rate during 2018?
 
