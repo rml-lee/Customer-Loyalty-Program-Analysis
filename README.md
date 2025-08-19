@@ -1,10 +1,8 @@
 # Customer Loyalty Program Analysis
 
 # Business Task
-This dataset contains information related to a promotional campaign conducted in 2018 by an airline in order to boost program enrollment. 
-Extract insights and trends about historical customer booking and flight activity, as well as analyze the results of the campaign.
+This analysis will gather actionable insights and identify trends from historical customer booking and flight activity data, taking a deeper dive into enrollment drivers and churn behavior. The goal is to pinpoint key customer segments and assess the impact of promotions on enrollment and retention by examining geographic trends, campaign performance, and quarterly churn rates. This will enable data-driven strategies to optimize marketing campaigns and program benefits for improved customer retention and lifetime value.
 
-**Domain**: Marketing and Customer Analytics
 
 ## Table of Contents
 - [**Data Source**](#data-source)
