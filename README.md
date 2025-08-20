@@ -1,7 +1,7 @@
 # Customer Loyalty Program Analysis
 
 # Business Objective
-This analysis will gather actionable insights and identify trends from historical customer booking and flight activity data, taking a deeper dive into enrollment drivers and churn behavior. The goal is to pinpoint key customer segments and assess the impact of the promotion campaign on enrollment and retention by examining geographic trends, campaign performance, and quarterly churn rates. This will enable data-driven strategies to optimize marketing campaigns and program benefits for improved customer retention and lifetime value.
+This analysis will gather actionable insights and identify trends from historical customer booking and flight activity data, specifically looking into enrollment drivers and churn behavior. The goal is to pinpoint key customer segments and assess the impact of the promotion campaign on enrollment and retention by examining geographic trends, campaign performance, and quarterly churn rates. This will enable data-driven strategies to optimize marketing campaigns and program benefits for improved customer retention and lifetime value.
 
 
 # Table of Contents
